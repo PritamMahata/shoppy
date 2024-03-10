@@ -1,0 +1,19 @@
+html{
+    user-select: none;
+}
+
+.stars li:hover{
+    transform: translateY(-3px);
+
+}
+
+ .stars li i{
+    position: absolute;
+    transform: translateY(-15px);
+}
+
+.stars li:focus{
+    color: black;
+}
+
+

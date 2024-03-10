@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment</title>
+  <link rel="icon" href="../../main_style/Fabicon_icon/Index.svg" type="image/svg">
+  <!-- Google Fonts CDN Link -->
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div style="display: flex;
+  flex-direction: column;
+  align-items: center;">
+    <div class="card">
+      <!-- <h3 class="bank">bank</h3> -->
+      <div class="bank">
+        <span><input type="text" placeholder="Your bank name"></span>
+      </div>
+
+
+      <img src="images/chip.png" class="chip" />
+      <img src="images/contactless-indicator.png" class="indicator" />
+      <div class="number">
+        <span><input type="text" maxlength="4" placeholder="0000"></span>
+        <span><input type="text" maxlength="4" placeholder="1111"></span>
+        <span><input type="text" maxlength="4" placeholder="2222"></span>
+        <span><input type="text" maxlength="4" placeholder="3333"></span>
+
+      </div>
+
+      <!-- <h3 class="number">4100 1234 5678 9010</h3> -->
+      <h5 class="card-holder">
+        <span>card holder</span>
+        <br />
+        <input type="text" placeholder="Card holder" >
+      </h5>
+      <h5 class="valid">
+        <span>
+          <input type="text" placeholder="CVV" maxlength="3">
+        </span>
+        <br />
+        <input type="text" placeholder="VALID" maxlength="2">/<input type="text" placeholder="THRU" maxlength="2">
+      </h5>
+      <img src="images/visa.png" class="logo" />
+    </div>
+
+    <div class="submit" style="
+    z-index: 56494;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 370px;">
+     <a href="../../index.html"> <input type="button" value="Placeorder" ></a>
+     <a href="../../index.html"> <input type="button" value="MayBe later" ></a>
+    </div>
+
+
+
+
+
+
+  </div>
+</body>
+
+</html>

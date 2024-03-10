@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /* box-sizing: border-box; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    user-select: none;
+    background: #ffffff;
+}
+
+
+/* for header */
+
+nav i {
+    margin: 0px 4px 0px 4px;
+}
+
+nav .logo {
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-left: 110px;
+}
+
+nav {
+    height: 70px;
+    width: 100%;
+    background: #063247;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .4);
+    position: fixed;
+    z-index: 9999;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 18px;
+    background: #063247;
+    transition: .5s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #23dbdb;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid #23dbdb;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+}
+
+nav ul li:hover>ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+}
+
+nav ul ul li {
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border: 2px solid #ffffff00;
+    border-top: none;
+    border-radius: 50px;
+}
+
+nav ul ul li a {
+    line-height: 50px;
+    border-radius: 50px;
+}
+
+nav ul ul ul {
+    border-top: none;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+
+
+
+
+.container {
+    display: flex;
+    height: 100%;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: relative;
+    align-items: flex-start;
+}
+
+
+
+
+.buy {
+    width: 32%;
+    height: 50px;
+    background-color: #ff4e5b;
+    color: #ffffff;
+    font-size: 16pt;
+    transition: 0.3s;
+}
+
+.SeeMore {
+    width: 32%;
+    height: 50px;
+    color: #ffffff;
+    background-color: #ffffff;
+    color: #ff4e5b;
+    font-size: 16pt;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+.btn {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+.section2 {
+    height: 412px;
+    width: 541px;
+    margin-right: 50px;
+    margin-top: 0px;
+}
+
+/* fscility section */
+
+.fasility {
+    margin: -25px 0px 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+/* product list section start */
+
+.latest-products {
+    margin-top: 100px;
+}
+
+.latest-products .section-heading a {
+    float: right;
+    margin-top: -17px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #f33f3f;
+}
+
+.product-item {
+    /* border: 1px solid #eee; */
+    overflow: hidden;
+    /* margin-bottom: 30px; */
+}
+
+.product-item img {
+    /* border: 1px solid #eee;
+    margin-bottom: 30px; */
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.product-item img:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 0px 14px 6px #0000005e;
+}
+
+.product-item .down-content {
+    padding: 30px;
+    position: relative;
+}
+
+.product-item img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.product-item .down-content h4 {
+    font-size: 17px;
+    color: #1a6692;
+    margin-bottom: 20px;
+}
+
+.product-item .down-content h6 {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 18px;
+    color: #121212;
+}
+
+.product-item .down-content p {
+    margin-bottom: 20px;
+}
+
+.product-item .down-content ul li {
+    display: inline-block;
+}
+
+.product-item .down-content ul li i {
+    color: #f33f3f;
+    font-size: 14px;
+}
+
+.product-item .down-content span {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: 13px;
+    color: #f33f3f;
+    font-weight: 500;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -72px;
+    /* margin-left: -15px; */
+}
+
+
+
+.col-md-4 {
+    flex: 0 0 32.933333%;
+    margin: 2px;
+    background: #ffffffbd;
+}
+
+.col-md-12 {
+    margin: 0px 75px 15px 75px;
+}
+
+/* product list section end */
+
+/* for footer */
+
+.footer {
+    width: auto;
+    height: 210px;
+    /* border: 2px solid red; */
+    display: flex;
+    background-color: #272222;
+    color: #ebebeb;
+    margin-top: 12px;
+}
+
+.footcontainer {
+    display: flex;
+}
+
+.footsection {
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    padding: 0px 5px;
+    /* margin-top: 15px; */
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footsection input {
+    border: none;
+    margin-top: 15px;
+    height: 25px;
+    width: 250px;
+    font-family: sans-serif;
+    font-size: larger;
+    background-color: rgb(255, 255, 255);
+    padding: 7px;
+    transition: 0.3s;
+}
+
+.footsection button {
+    margin-top: 15px;
+    border: none;
+    height: 35px;
+    width: 130px;
+    font-family: sans-serif;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    background-color: #ff4e5b;
+    transition: 0.3s;
+}
+
+.footsection button:hover {
+    border: none;
+    height: 40px;
+    width: 140px;
+    font-family: sans-serif;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    background-color: #ff4e5b;
+    cursor: pointer;
+}
+
+.footsection ul li a {
+    color: white;
+    transition: 0.3s;
+}
+
+.footsection ul li a:hover {
+    color: #ff4e5b;
+}
+
+/* for responsive design  */
+@media all and (max-width:1100px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    nav {
+        display: none;
+    }
+.left-column{
+    margin-top: 135px;
+}
+
+.right-column {
+    width: 50%;
+    margin-top: 135px;
+}
+    
+    .container {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+
+
+@media all and (max-width:790px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: 15px;
+    }
+    .right-column {
+        width: 100%;
+        margin-top: 95px;
+    }
+
+    .left-column img {
+        width: 95%;
+    }
+}
